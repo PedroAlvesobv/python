@@ -1,0 +1,21 @@
+temos bebidas, comidas e doces
+para poder consumir teriamos que dar import no programa
+
+import bebidas
+ou 
+import doce 
+
+se quiser usar só um dos itens dentro dos imports então 
+
+from bebidas import cocacola
+
+ex:
+biblioteca 'math'
+
+ceil arredondamento para cima 
+floor  arre. para baixo 
+trunc vai arredondar para inteiro 
+pow   potencia
+sqrt raiz quadrada
+factorial   (qualquer numero)!
+

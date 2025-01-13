@@ -1,0 +1,38 @@
+OPERAÇÕES ARITMÉTICAS
+
++ adição
+EX:
+5 + 2 == 7
+
+- subtração
+EX: 
+5 - 2 == 3
+
+/ divisão
+EX:
+5 / 2 == 2.5
+
+* multiplicação
+EX:
+5 * 2 == 10
+
+** ou pow(base, expoente) expoente
+EX: 
+5 ** 2 == 25              / 5^2
+
+pow(4,3) == 64
+
+81**(1/2)
+9
+
+**(1/2) é o mesmo de raiz quadrada
+**(1/3) é o mesmo de raiz cubica
+
+
+// Divisão inteira    % Resto da Divisão
+EX: 
+5 // 2 == 2        5     2
+                   1     2
+5 % 2 == 1
+
+== igual

@@ -1,0 +1,6 @@
+ORDEM DE PRECEDÊNCIA
+
+1 - ()
+2 - ** 
+3 -  * ou / ou // ou % 
+4 - + ou -

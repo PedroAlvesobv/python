@@ -1,0 +1,45 @@
+CONDIÇÕES SIMPLES E COMPOSTAS
+
+Estruturas sequenciais
+
+numa estrada com dois caminhos
+
+carro.siga()
+se carro.esquerda()
+    Caminho() 
+    para() 
+    a ()
+    meta()
+senão
+    Outro()
+    caminho()
+    para()
+    a()
+    meta()
+carro.para()
+
+se carro.esquerda()
+    bloco _V_
+senão
+    bloco _F_
+
+PRÁTICA
+
+if carro.esquerda():
+    bloco True
+else:
+    bloco False
+
+ex:
+tempo = int(input('Quantos anos tem seu carro? '))
+if tempo <=3:
+    print('carro novo')
+else:
+    print('carro velho')
+print('--FIM--')
+
+ALTERNATIVA
+
+tempo = int(input('Quantos anos tem seu carro? '))
+print('carro novo' if tempo <=3 else 'carro velho')
+print('FIM')

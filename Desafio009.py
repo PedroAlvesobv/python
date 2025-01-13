@@ -1,0 +1,13 @@
+n = int(input('Digita um número para vermos os seus multiplos: '))
+tab1 = (f'{n} x 1  = {n * 1}')
+tab2 = (f'{n} x 2  = {n * 2}')
+tab3 = (f'{n} x 3  = {n * 3}')
+tab4 = (f'{n} x 4  = {n * 4}')
+tab5 = (f'{n} x 5  = {n * 5}')
+tab6 = (f'{n} x 6  = {n * 6}')
+tab7 = (f'{n} x 7  = {n * 7}')
+tab8 = (f'{n} x 8  = {n * 8}')
+tab9 = (f'{n} x 9  = {n * 9}')
+tab10 = (f'{n} x 10 = {n * 10}')
+
+print('A tabuada do número que escolheu foi: \n {} \n {} \n {} \n {} \n {} \n {} \n {} \n {} \n {} \n {}'.format(tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8, tab9, tab10))

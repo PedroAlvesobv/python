@@ -1,0 +1,73 @@
+MANIPULAR CADEIAS DE TEXTO
+
+EX1:
+
+'Curso em video Python' - cadeia de caracteres
+frase = 'Curso em video Python'         atribuição de dado str
+
+FATIAMENTO
+frase [9]     só o caracter 9 (v)
+frase [9:13]   do caracter 9 ao 13 não incluindo o 13 ou seja de 9 a 12
+frase [9:21] (só existem 20 porque começa no 0 a contagem) funciona normal
+frase [9:21:2] salta de 2 em 2 a começar do 9
+frase [:5]     começa no inicio da frase até ao 4 porque o 5 não conta 
+frase [15:]    começa no 15 até ao final 
+frase [9::3]   vai começar no 9 até o final e vai de 3 em 3, ou seja, 9-12-15-18
+
+ANÁLISE (Mais usada)
+
+len(frase)  -  Comprimento da frase (neste caso 21 caracteres)
+frase.count('o')  -  conta as vezes que aparece o 'o' minusculo (neste caso 3 vezes)
+frase.count('o', 0, 13)  - conta as vezes que aparece o 'o' minusculo do caracter 0 ao 12 porque o 13º é ignorado
+frase.find('deo')  -  quando é que ele encontrou 'deo' na string
+frase.find('Android')  -  se não tiver essa string vai receber o valor -1 o que significa que realmente não existe 
+'Curso' in frase  -  vai dizer se existe a palavra 'Curso' na tela (True ou False)
+
+TRANSFORMAÇÃO
+
+frase.replace('Python', 'Android')  -  Substitui 'Python' por 'Android' na frase
+frase.upper()  -  Vai ficar em maiusculas (tudo)
+frase.lower()  -  Vai ficar em minusculas (tudo)
+frase.capitalize()  -  vai ficar tudo minusculas menos a primeira letra da frase
+frase.title()  -  vai ver quantas palavras existem na frase e vai meter todas as primeiras letras das palavras em maiusculas
+
+DIVISÃO
+
+frase.split()  -  cada palavra na frase é individualizada, ou seja de 'Curso em video Python' passa a 'Curso' 'em' 'video' 'Python'
+Gera uma lista de todas as palavras da frase
+caracter de split é o ' ' por padrão mas dá para redefinir
+
+JUNÇÃO
+
+'-'.join(frase)  -  Juntar todos os elementos de frase com '-' ou seja neste exemplo ficava 'Curso-em-video-Python'
+
+EX2:
+
+'   Aprenda Python  '
+
+frase.strip()  -  remove todos os espaços inuteis então é como se ficasse 'Aprenda Python'
+variações
+frase.rstrip()  -  remove os ultimos espaços inuteis
+frase.lstrip()  -  remove os primeiros espaços inuteis
+
+Dica: A função join() coloca a string declarada entre cada microespaço 
+(caracter) da cadeia ou entre os elementos de uma lista. 
+No exemplo do Guanabara, a string ( tracinho) ficou entre as palavras 
+da frase apenas porque antes ele havia transformado a frase numa lista 
+(separando com a  função strip() onde tinha espaço em branco). 
+Se você for repetir  o comando que ele colocou na tela ['-'.join(frase)] 
+vai dar diferente na hora de rodar. Veja o exemplo:
+
+frase = 'Curso em Vídeo'
+
+print('-'.join(frase))
+
+# Retorna:
+C-u-r-s-o- e-m -V-í-d-e-o
+
+# Corrigido:
+
+print('-'.join(frase.split()))
+
+# Retorna:
+Curso-em-Vídeo
